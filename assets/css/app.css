@@ -1,0 +1,79 @@
+body {
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+
+#gameBoard{
+    width: 720px;
+}
+
+
+.cards{
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card {
+    width: 90px;
+    height: 90px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    perspective: 1000px;  
+    transition: transform     0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+}
+
+.flip{
+      transform: rotateY(180deg);
+}
+
+.card_image{
+    margin: auto;
+   width: 70px;
+}
+
+.input input {
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: solid #222 3px;
+    color: white;
+}
+
+
+.input input::placeholder {
+    color: rgb(215, 215, 215);
+    text-align: center;
+}
+
+.progress-bar {
+    width: 100%;
+}
+
+@media screen and (max-width:600px) {
+    .card {
+        width: 70px;
+        height: 70px;
+    }
+
+    ._player1, ._player2{
+         width: 160px !important;
+    }
+    .cards {
+        padding: 30px;
+    }
+
+    .card_image{
+        width: 50px;
+    }
+}

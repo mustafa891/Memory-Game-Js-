@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body class="bg-gradient-blue">
+
+    <header class="p-4">
+        <!-- Title -->
+        <div class="title text-center pt-3">
+            <h3 class="text-white">Memory Game</h3>
+        </div>
+        <!--End Title -->
+
+        <!-- Defualt D-flex  test-->
+        <div class="game-info d-none w-100 justify-content-between">
+
+            <!-- Player1 -->
+            <div class="_player1 card p-2" style="width: 200px; height: 60px;">
+                <div class="d-flex justify-content-between">
+                    <div class="_player1_name font-weight-bold">Player1</div>
+                    <div class="_player1_score">0</div>
+                </div>
+                <div class="progress ">
+                    <div class="progress-bar " role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+            </div>
+
+            <!-- Player2 -->
+            <div class="_player2 card p-2" style="width: 200px; height: 60px;">
+                <div class="d-flex justify-content-between">
+                    <div class="_player2_name font-weight-bold">Player2</div>
+                    <div class="_player2_score">0</div>
+                </div>
+                <div class="progress ">
+                    <div class="progress-bar " role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <main class="d-flex justify-content-center">
+
+        <!-- Test -->
+        <div class="menu pt-5 text-center">
+            <div class="form d-flex">
+                <div class="input pr-5">
+                    <input placeholder="Player1" id="player1Name" type="text">
+                </div>
+                <div class="input">
+                    <input placeholder="Player2" id="player2Name" type="text">
+                </div>
+            </div>
+            <div class="submit-btn mt-4">
+                <button id="startBtn" class="btn btn-outline-github">Start</button>
+            </div>
+        </div>
+
+        <!-- Test -->
+        <section class="d-none" id="gameBoard">
+
+            <!-- Cards Section -->
+            <div class="cards d-flex flex-wrap">
+
+                <div class="card">
+                    <img class="card_image" src="assets/Images/blank.png">
+                </div>
+
+                <div class="card">
+                    <img class="card_image" src="assets/Images/blank.png">
+                </div>
+
+                <div class="card">
+                    <img class="card_image" src="assets/Images/blank.png">
+                </div>
+
+                <div class="card">
+                    <img class="card_image" src="assets/Images/blank.png">
+                </div>
+
+                <div class="card">
+                    <img class="card_image" src="assets/Images/blank.png">
+                </div>
+
+                <div class="card">
+                    <img class="card_image" src="assets/Images/blank.png">
+                </div>
+
+                <div class="card">
+                    <img class="card_image" src="assets/Images/blank.png">
+                </div>
+
+                <div class="card">
+                    <img class="card_image" src="assets/Images/blank.png">
+                </div>
+
+                <div class="card">
+                    <img class="card_image" src="assets/Images/blank.png">
+                </div>
+
+                <div class="card">
+                    <img class="card_image" src="assets/Images/blank.png">
+                </div>
+
+                <div class="card">
+                    <img class="card_image" src="assets/Images/blank.png">
+                </div>
+
+                <div class="card">
+                    <img class="card_image" src="assets/Images/blank.png">
+                </div>
+
+                <div class="card">
+                    <img class="card_image" src="assets/Images/blank.png">
+                </div>
+
+                <div class="card">
+                    <img class="card_image" src="assets/Images/blank.png">
+                </div>
+
+                <div class="card">
+                    <img class="card_image" src="assets/Images/blank.png">
+                </div>
+
+                <div class="card">
+                    <img class="card_image" src="assets/Images/blank.png">
+                </div>
+
+            </div>
+            <!--end Cards Section -->
+
+        </section>
+
+    </main>
+
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body class="bg-gradient-blue">
+
+    <header class="p-5">
+        <h4 class="text-white">Result Game : </h2>
+    </header>
+
+    <main class="d-flex justify-content-center " style="gap: 30px;">
+
+        <div class="first card d-flex flex-row align-items-center justify-content-between p-4"
+            style="width: 300px; height: 130px; border-radius: 6px;">
+            <span>1</span>
+            <div class="image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPyGNr2qL63Sfugk2Z1-KBEwMGOfycBribew&usqp=CAU"
+                    width="100">
+            </div>
+
+            <div>
+                <div class="first_player_name">PLayer 1</div>
+                <div class="first_player_point">90</div>
+            </div>
+
+        </div>
+
+        <div class="second card d-flex flex-row align-items-center justify-content-between p-4"
+            style="width: 300px; height: 130px; border-radius: 6px;">
+            <span>2</span>
+            <div class="image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPyGNr2qL63Sfugk2Z1-KBEwMGOfycBribew&usqp=CAU"
+                    width="100">
+            </div>
+
+
+            <div>
+                <div class="second_player_name">PLayer 1</div>
+                <div class="second_player_point">90</div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="text-center position-absolute bottom-4 left-0 right-0">
+        <strong class="text-white">Thanks for try my tiny little game </h2>
+    </footer>
+
+    <script>
+        let result = JSON.parse(localStorage.getItem("data"));
+
+        console.log(result);
+        // if player won 
+        if (result.player1.score > result.player2.score) {
+            document.querySelector(".first_player_name").innerText = result.player1.name;
+            document.querySelector(".first_player_point").innerText = "Point: " + result.player1.score;
+            // player second
+            document.querySelector(".second_player_name").innerText = result.player2.name;
+            document.querySelector(".second_player_point").innerText = "Point: " + result.player2.score;
+        } else {
+            document.querySelector(".first_player_name").innerText = result.player2.name;
+            document.querySelector(".first_player_point").innerText = "Point: " + result.player2.score;
+
+            // player 2
+            document.querySelector(".second_player_name").innerText = result.player1.name;
+            document.querySelector(".second_player_point").innerText = "Point: " + result.player1.score;
+        }
+    </script>
+
+</body>
+
+</html>
