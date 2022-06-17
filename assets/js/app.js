@@ -93,7 +93,7 @@ function BoradGame() {
 
         
         // Event
-        loadImage()
+        load()
         
     cards.forEach((card, i) => {
         card.setAttribute("data-id", (i + 1))
@@ -272,11 +272,13 @@ function gameEnd() {
 
 // load image 
 
-function loadImage () {
+function load () {
     for (let card of shuffleCard) {
       let image = new Image();
        image.src = "https://mustafa891.github.io/Memory-Game-Js-/assets/Images/" + card.img;
     }
+     let audio = new Audio (); 
+      audio.src = https://mustafa891.github.io/Memory-Game-Js-/assets/sound/flip-card.mp3";
 }
 
 startBtn.addEventListener("click", startGame);
