@@ -106,11 +106,11 @@ function BoradGame() {
 function flipCard() {
 
     if (!canClick) return;
-//     let audioFlip = new Audio();
+    let audioFlip = document.querySelector("#flipAudio");
 
 //     // add sound for game
 //     audioFlip.src = "assets/sound/flip-card.mp3";
-//     audioFlip.play();
+    audioFlip.play();
 
     let img = Array.from(shuffleCard).filter(card => {
         if (card.name == this.dataset.img) return card.img;
