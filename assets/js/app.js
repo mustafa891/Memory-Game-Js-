@@ -70,8 +70,6 @@ let timePlayer2 = 182;
 function startGame() {
         
 
-        // Event
-        loadImage()
 
     document.querySelector(".menu").classList.add("d-none");
     document.querySelector(".game-info").classList.replace("d-none", "d-flex");
@@ -93,6 +91,10 @@ function BoradGame() {
     shuffleCard = shuffleCard.concat(shuffleCard)
     shuffleCard = shuffleCard.sort(() => Math.random() - 0.5);
 
+        
+        // Event
+        loadImage()
+        
     cards.forEach((card, i) => {
         card.setAttribute("data-id", (i + 1))
         card.setAttribute("data-img", shuffleCard[i].name)
