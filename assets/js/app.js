@@ -279,6 +279,7 @@ function load () {
     }
      let audio = new Audio (); 
       audio.src = "https://mustafa891.github.io/Memory-Game-Js-/assets/sound/flip-card.mp3";
+        audio.play()
 }
 
 startBtn.addEventListener("click", startGame);
