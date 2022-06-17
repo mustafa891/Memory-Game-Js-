@@ -267,7 +267,7 @@ function Get4Card(array) {
 
 
 function gameEnd() {
-    window.location.href = "result.html"
+    window.location.href = "https://mustafa891.github.io/Memory-Game-Js-/result.html"
 }
 
 // load image 
