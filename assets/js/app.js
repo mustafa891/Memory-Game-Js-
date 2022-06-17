@@ -110,6 +110,7 @@ function flipCard() {
 
 //     // add sound for game
 //     audioFlip.src = "assets/sound/flip-card.mp3";
+        audioFlip.currentTime = 0;
     audioFlip.play();
 
     let img = Array.from(shuffleCard).filter(card => {
