@@ -106,11 +106,11 @@ function BoradGame() {
 function flipCard() {
 
     if (!canClick) return;
-    let audioFlip = new Audio();
+//     let audioFlip = new Audio();
 
-    // add sound for game
-    audioFlip.src = "assets/sound/flip-card.mp3";
-    audioFlip.play();
+//     // add sound for game
+//     audioFlip.src = "assets/sound/flip-card.mp3";
+//     audioFlip.play();
 
     let img = Array.from(shuffleCard).filter(card => {
         if (card.name == this.dataset.img) return card.img;
@@ -277,9 +277,7 @@ function load () {
       let image = new Image();
        image.src = "https://mustafa891.github.io/Memory-Game-Js-/assets/Images/" + card.img;
     }
-     let audio = new Audio (); 
-      audio.src = "https://mustafa891.github.io/Memory-Game-Js-/assets/sound/flip-card.mp3";
-        audio.play()
+
 }
 
 startBtn.addEventListener("click", startGame);
