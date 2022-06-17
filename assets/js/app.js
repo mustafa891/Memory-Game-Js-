@@ -275,7 +275,7 @@ function gameEnd() {
 function loadImage () {
     for (let card of shuffleCard) {
       let image = new Image();
-       image.src = "Memory-Game-Js-/assets/Images/" + card.img;
+       image.src = "/assets/Images/" + card.img;
     }
 }
 
