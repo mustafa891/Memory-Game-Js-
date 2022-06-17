@@ -274,4 +274,5 @@ function loadImage () {
 }
 
 // Event
+loadImage()
 startBtn.addEventListener("click", startGame);
