@@ -68,6 +68,10 @@ let timePlayer1 = 182;
 let timePlayer2 = 182;
 
 function startGame() {
+        
+
+        // Event
+        loadImage()
 
     document.querySelector(".menu").classList.add("d-none");
     document.querySelector(".game-info").classList.replace("d-none", "d-flex");
@@ -273,6 +277,4 @@ function loadImage () {
     }
 }
 
-// Event
-loadImage()
 startBtn.addEventListener("click", startGame);
