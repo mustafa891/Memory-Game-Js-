@@ -264,5 +264,14 @@ function gameEnd() {
     window.location.href = "result.html"
 }
 
+// load image 
+
+function loadImage () {
+    for (let card of shuffleCard) {
+      let image = new Image();
+       image.src = card.img;
+    }
+}
+
 // Event
 startBtn.addEventListener("click", startGame);
